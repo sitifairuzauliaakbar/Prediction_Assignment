@@ -3,8 +3,8 @@ library(randomForest)
 library(caret)  
 
 # Load dataset
-train_data <- read.csv("C:/Users/shirooo/OneDrive/Documents/R/pml-training.csv", na.strings=c("NA","#DIV/0!",""))
-test_data <- read.csv("C:/Users/shirooo/OneDrive/Documents/R/pml-testing.csv", na.strings=c("NA","#DIV/0!",""))
+train_data <- read.csv("pml-training.csv", na.strings=c("NA","#DIV/0!",""))
+test_data <- read.csv("pml-testing.csv", na.strings=c("NA","#DIV/0!",""))
 
 # Remove irrelevant columns
 irrelevant_cols <- c("X", "user_name", "cvtd_timestamp", "raw_timestamp_part_1", "raw_timestamp_part_2", "new_window", "num_window")
